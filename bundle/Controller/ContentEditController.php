@@ -59,25 +59,17 @@ class ContentEditController extends Controller
     /**
      * Displays and processes a content creation form. Showing the form does not create a draft in the repository.
      *
-     * @param int $contentTypeIdentifier ContentType id to create
-     * @param string $language Language code to create the content in (eng-GB, ger-DE, ...))
-     * @param int $parentLocationId Location the content should be a child of
      * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param ContentCreateView $view
      *
-     * @return \EzSystems\RepositoryForms\Content\View\ContentCreateView|Response
-     *
-     * @throws \eZ\Publish\Core\Base\Exceptions\InvalidArgumentType
-     * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException
-     * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
+     * @return ContentCreateView|Response
      */
-    public function createWithoutDraftAction($contentTypeIdentifier, $language, $parentLocationId, Request $request)
+    public function createWithoutDraftAction(Request $request, ContentCreateView $view)
     {
-        $language = $this->languageService->loadLanguage($language);
-        $parentLocation = $this->locationService->loadLocation($parentLocationId);
-        $contentType = $this->contentTypeService->loadContentTypeByIdentifier($contentTypeIdentifier);
-        $data = (new ContentCreateMapper())->mapToFormData($contentType, [
+        $language = $view->getLanguage();
+        $data = (new ContentCreateMapper())->mapToFormData($view->getContentType(), [
             'mainLanguageCode' => $language->languageCode,
-            'parentLocation' => $this->locationService->newLocationCreateStruct($parentLocationId),
+            'parentLocation' => $this->locationService->newLocationCreateStruct($view->getLocation()->id),
         ]);
         $form = $this->createForm(ContentEditType::class, $data, [
             'languageCode' => $language->languageCode,
@@ -93,12 +85,12 @@ class ContentEditController extends Controller
             }
         }
 
-        return new ContentCreateView(null, [
+        $view->addParameters([
             'form' => $form->createView(),
             'language' => $language,
-            'contentType' => $contentType,
-            'parentLocation' => $parentLocation,
         ]);
+
+        return $view;
     }
 
     /**
