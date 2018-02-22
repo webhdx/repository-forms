@@ -16,10 +16,8 @@ use EzSystems\RepositoryForms\Content\View\ContentCreateDraftView;
 use EzSystems\RepositoryForms\Content\View\ContentCreateView;
 use EzSystems\RepositoryForms\Content\View\ContentEditView;
 use EzSystems\RepositoryForms\Data\Content\CreateContentDraftData;
-use EzSystems\RepositoryForms\Data\Mapper\ContentCreateMapper;
 use EzSystems\RepositoryForms\Form\ActionDispatcher\ActionDispatcherInterface;
 use EzSystems\RepositoryForms\Form\Type\Content\ContentDraftCreateType;
-use EzSystems\RepositoryForms\Form\Type\Content\ContentEditType;
 use Symfony\Component\HttpFoundation\Request;
 
 class ContentEditController extends Controller
@@ -56,46 +54,29 @@ class ContentEditController extends Controller
     /**
      * Displays and processes a content creation form. Showing the form does not create a draft in the repository.
      *
-     * @param int $contentTypeIdentifier ContentType id to create
-     * @param string $language Language code to create the content in (eng-GB, ger-DE, ...))
-     * @param int $parentLocationId Location the content should be a child of
      * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param \EzSystems\RepositoryForms\Content\View\ContentCreateView $view
      *
      * @return \EzSystems\RepositoryForms\Content\View\ContentCreateView|\Symfony\Component\HttpFoundation\Response
-     *
-     * @throws \eZ\Publish\Core\Base\Exceptions\InvalidArgumentType
-     * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException
-     * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      */
-    public function createWithoutDraftAction($contentTypeIdentifier, $language, $parentLocationId, Request $request)
+    public function createWithoutDraftAction(Request $request, ContentCreateView $view)
     {
-        $language = $this->languageService->loadLanguage($language);
-        $parentLocation = $this->locationService->loadLocation($parentLocationId);
-        $contentType = $this->contentTypeService->loadContentTypeByIdentifier($contentTypeIdentifier);
-        $data = (new ContentCreateMapper())->mapToFormData($contentType, [
-            'mainLanguageCode' => $language->languageCode,
-            'parentLocation' => $this->locationService->newLocationCreateStruct($parentLocationId),
-        ]);
-        $form = $this->createForm(ContentEditType::class, $data, [
-            'languageCode' => $language->languageCode,
-            'mainLanguageCode' => $language->languageCode,
-            'drafts_enabled' => true,
-        ]);
+        $form = $view->getForm();
         $form->handleRequest($request);
 
         if ($form->isValid() && null !== $form->getClickedButton()) {
-            $this->contentActionDispatcher->dispatchFormAction($form, $data, $form->getClickedButton()->getName());
+            $this->contentActionDispatcher->dispatchFormAction(
+                $form,
+                $form->getData(),
+                $form->getClickedButton()->getName()
+            );
+
             if ($response = $this->contentActionDispatcher->getResponse()) {
                 return $response;
             }
         }
 
-        return new ContentCreateView(null, [
-            'form' => $form->createView(),
-            'language' => $language,
-            'contentType' => $contentType,
-            'parentLocation' => $parentLocation,
-        ]);
+        return $view;
     }
 
     /**
