@@ -25,10 +25,6 @@ class EzSystemsRepositoryFormsBundle extends Bundle
     public function build(ContainerBuilder $container)
     {
         parent::build($container);
-        $container->addCompilerPass(new FieldTypeFormMapperDispatcherPass());
-        $container->addCompilerPass(new LimitationFormMapperPass());
-        $container->addCompilerPass(new LimitationValueMapperPass());
-        $container->addCompilerPass(new ViewBuilderRegistryPass());
 
         $eZExtension = $container->getExtension('ezpublish');
         $eZExtension->addConfigParser(new ContentEdit());
