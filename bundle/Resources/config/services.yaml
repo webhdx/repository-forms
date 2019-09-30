@@ -318,7 +318,6 @@ services:
         calls:
             - [setViewTemplate, ['EzSystems\RepositoryForms\User\View\UserCreateView', "$user_edit.templates.create$"]]
             - [setViewTemplate, ['EzSystems\RepositoryForms\User\View\UserUpdateView', "$user_edit.templates.update$"]]
-            - [setViewTemplate, ['EzSystems\RepositoryForms\Content\View\ContentCreateDraftView', "$content_edit.templates.create_draft$"]]
             - [setPagelayout, ["$pagelayout$"]]
 
     ezrepoforms.translation.extractor.sorting:
