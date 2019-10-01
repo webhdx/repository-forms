@@ -1,9 +1,4 @@
 imports:
-    - {resource: language.yaml}
-    - {resource: section.yaml}
-    - {resource: role.yaml}
-    - {resource: fieldtypes.yaml}
-    - {resource: form_types.yaml}
     - {resource: views.yaml}
     - {resource: events.yaml}
 
