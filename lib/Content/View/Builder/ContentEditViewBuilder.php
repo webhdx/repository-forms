@@ -73,7 +73,7 @@ class ContentEditViewBuilder implements ViewBuilder
 
     public function matches($argument)
     {
-        return 'ez_content_edit:editVersionDraftAction' === $argument;
+        return 'EzSystems\RepositoryFormsBundle\Controller\ContentEditController::editVersionDraftAction' === $argument;
     }
 
     /**

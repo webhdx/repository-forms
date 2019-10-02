@@ -19,6 +19,7 @@ use eZ\Publish\API\Repository\UserService;
 use eZ\Publish\Core\Base\Exceptions\BadStateException;
 use eZ\Publish\Core\Base\Exceptions\InvalidArgumentException;
 use eZ\Publish\Core\Base\Exceptions\InvalidArgumentType;
+use eZ\Publish\Core\Base\Exceptions\UnauthorizedException as CoreUnauthorizedException;
 use EzSystems\RepositoryForms\Data\Mapper\UserCreateMapper;
 use EzSystems\RepositoryForms\Data\Mapper\UserUpdateMapper;
 use EzSystems\RepositoryForms\Form\ActionDispatcher\ActionDispatcherInterface;
@@ -34,7 +35,6 @@ use Symfony\Component\OptionsResolver\Exception\MissingOptionsException;
 use Symfony\Component\OptionsResolver\Exception\NoSuchOptionException;
 use Symfony\Component\OptionsResolver\Exception\OptionDefinitionException;
 use Symfony\Component\OptionsResolver\Exception\UndefinedOptionsException;
-use eZ\Publish\Core\Base\Exceptions\UnauthorizedException as CoreUnauthorizedException;
 
 class UserController extends Controller
 {
@@ -120,12 +120,14 @@ class UserController extends Controller
             }
         }
 
-        return new UserCreateView(null, [
+        $userCreateView = new UserCreateView(null, [
             'form' => $form->createView(),
             'language' => $language,
             'content_type' => $contentType,
             'parent_group' => $parentGroup,
         ]);
+
+        return $userCreateView;
     }
 
     /**

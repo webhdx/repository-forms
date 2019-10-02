@@ -72,7 +72,7 @@ class ContentCreateViewBuilder implements ViewBuilder
 
     public function matches($argument)
     {
-        return 'ez_content_edit:createWithoutDraftAction' === $argument;
+        return 'EzSystems\RepositoryFormsBundle\Controller\ContentEditController::createWithoutDraftAction' === $argument;
     }
 
     /**

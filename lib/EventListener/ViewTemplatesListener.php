@@ -61,6 +61,8 @@ class ViewTemplatesListener implements EventSubscriberInterface
     {
         $view = $event->getContentView();
 
+        dump($this->viewTemplates);
+        die;
         foreach ($this->viewTemplates as $viewClass => $template) {
             if ($view instanceof $viewClass) {
                 $view->setTemplateIdentifier($template);

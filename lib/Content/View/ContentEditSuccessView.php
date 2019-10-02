@@ -28,7 +28,7 @@ class ContentEditSuccessView extends BaseView implements LocationValueView
         parent::__construct('@EzSystemsRepositoryForms/http/302_empty_content.html.twig');
 
         $this->setResponse($response);
-        $this->setControllerReference(new ControllerReference('ez_content_edit:editVersionDraftSuccessAction'));
+        $this->setControllerReference(new ControllerReference('EzSystems\RepositoryFormsBundle\Controller\ContentEditController::editVersionDraftSuccessAction'));
     }
 
     /**
