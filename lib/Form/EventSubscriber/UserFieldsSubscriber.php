@@ -6,9 +6,9 @@
 namespace EzSystems\RepositoryForms\Form\EventSubscriber;
 
 use eZ\Publish\Core\FieldType\User\Value;
-use EzSystems\RepositoryForms\Data\User\UserAccountFieldData;
-use EzSystems\RepositoryForms\Data\User\UserCreateData;
-use EzSystems\RepositoryForms\Data\User\UserUpdateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserAccountFieldData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserCreateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserUpdateData;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;

@@ -9,8 +9,8 @@ namespace EzSystems\RepositoryForms\Form\Processor;
 
 use eZ\Publish\API\Repository\RoleService;
 use eZ\Publish\API\Repository\Values\User\RoleDraft;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class PolicyFormProcessor implements EventSubscriberInterface
@@ -41,7 +41,7 @@ class PolicyFormProcessor implements EventSubscriberInterface
             return;
         }
 
-        /** @var \EzSystems\RepositoryForms\Data\Role\PolicyCreateData|\EzSystems\RepositoryForms\Data\Role\PolicyUpdateData $data */
+        /** @var \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\PolicyCreateData|\EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\PolicyUpdateData $data */
         $data = $event->getData();
         if ($data->isNew() && $data->moduleFunction) {
             list($module, $function) = explode('|', $data->moduleFunction);
@@ -97,7 +97,7 @@ class PolicyFormProcessor implements EventSubscriberInterface
 
     public function processRemoveDraft(FormActionEvent $event)
     {
-        /** @var \EzSystems\RepositoryForms\Data\Role\PolicyCreateData|\EzSystems\RepositoryForms\Data\Role\PolicyUpdateData $data */
+        /** @var \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\PolicyCreateData|\EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\PolicyUpdateData $data */
         $data = $event->getData();
         if (!$data->isNew()) {
             $this->roleService->removePolicyByRoleDraft($data->roleDraft, $data->policyDraft);

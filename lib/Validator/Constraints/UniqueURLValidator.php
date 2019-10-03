@@ -10,7 +10,7 @@ namespace EzSystems\RepositoryForms\Validator\Constraints;
 
 use eZ\Publish\API\Repository\Exceptions\NotFoundException;
 use eZ\Publish\API\Repository\URLService;
-use EzSystems\RepositoryForms\Data\URL\URLUpdateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\URL\URLUpdateData;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 

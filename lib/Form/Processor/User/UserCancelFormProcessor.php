@@ -9,10 +9,10 @@
  */
 namespace EzSystems\RepositoryForms\Form\Processor\User;
 
-use EzSystems\RepositoryForms\Data\User\UserCreateData;
-use EzSystems\RepositoryForms\Data\User\UserUpdateData;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserCreateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserUpdateData;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;

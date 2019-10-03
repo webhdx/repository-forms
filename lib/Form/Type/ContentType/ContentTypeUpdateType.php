@@ -37,7 +37,7 @@ class ContentTypeUpdateType extends AbstractType
     {
         $resolver
             ->setDefaults([
-                'data_class' => 'EzSystems\RepositoryForms\Data\ContentTypeData',
+                'data_class' => 'EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeData',
                 'translation_domain' => 'ezrepoforms_content_type',
                 'mainLanguageCode' => null,
             ])

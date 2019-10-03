@@ -8,8 +8,8 @@
  */
 namespace EzSystems\RepositoryForms\FieldType\Mapper;
 
-use EzSystems\RepositoryForms\Data\Content\FieldData;
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
 use EzSystems\RepositoryForms\Form\Type\FieldType\RelationFieldType;
 use EzSystems\RepositoryForms\Form\Type\LocationType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;

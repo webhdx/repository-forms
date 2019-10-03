@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace EzSystems\RepositoryForms\Validator\Constraints;
 
-use EzSystems\RepositoryForms\Data\User\UserAccountFieldData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserAccountFieldData;
 use EzSystems\RepositoryForms\Validator\ValidationErrorsProcessor;
 use Symfony\Component\Validator\Constraint;
 

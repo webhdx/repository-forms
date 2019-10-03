@@ -8,8 +8,8 @@
 namespace EzSystems\RepositoryForms\Form\Processor;
 
 use eZ\Publish\API\Repository\LanguageService;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class LanguageFormProcessor implements EventSubscriberInterface
@@ -33,7 +33,7 @@ class LanguageFormProcessor implements EventSubscriberInterface
 
     public function processUpdate(FormActionEvent $event)
     {
-        /** @var \EzSystems\RepositoryForms\Data\Language\LanguageUpdateData|\EzSystems\RepositoryForms\Data\Language\LanguageCreateData $languageData */
+        /** @var \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageUpdateData|\EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageCreateData $languageData */
         $languageData = $event->getData();
         if ($languageData->isNew()) {
             $language = $this->languageService->createLanguage($languageData);

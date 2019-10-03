@@ -13,7 +13,7 @@ use eZ\Publish\API\Repository\ObjectStateService;
 use eZ\Publish\API\Repository\Values\ObjectState\ObjectStateGroup;
 use eZ\Publish\API\Repository\Values\User\Limitation\ObjectStateLimitation;
 use eZ\Publish\Core\Repository\Values\ObjectState\ObjectState;
-use EzSystems\RepositoryForms\Limitation\Mapper\ObjectStateLimitationMapper;
+use EzSystems\EzPlatformAdminUi\Limitation\Mapper\ObjectStateLimitationMapper;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 

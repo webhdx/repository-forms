@@ -11,8 +11,8 @@ namespace EzSystems\RepositoryForms\Tests\Twig;
 use eZ\Publish\Core\MVC\Symfony\Templating\Tests\Twig\Extension\FileSystemTwigIntegrationTestCase;
 use eZ\Publish\Core\MVC\Symfony\Templating\Twig\FieldBlockRenderer;
 use eZ\Publish\Core\Repository\Values\ContentType\FieldDefinition;
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
-use EzSystems\RepositoryForms\Twig\FieldEditRenderingExtension;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
+use EzSystems\EzPlatformAdminUiBundle\Templating\Twig\FieldEditRenderingExtension;
 
 class FieldEditRenderingExtensionTest extends FileSystemTwigIntegrationTestCase
 {

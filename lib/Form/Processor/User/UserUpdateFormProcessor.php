@@ -11,9 +11,9 @@ namespace EzSystems\RepositoryForms\Form\Processor\User;
 
 use eZ\Publish\API\Repository\ContentService;
 use eZ\Publish\API\Repository\UserService;
-use EzSystems\RepositoryForms\Data\User\UserUpdateData;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserUpdateData;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;

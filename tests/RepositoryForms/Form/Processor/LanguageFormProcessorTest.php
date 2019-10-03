@@ -9,10 +9,10 @@ namespace EzSystems\RepositoryForms\Tests\Form\Processor;
 
 use eZ\Publish\API\Repository\LanguageService;
 use eZ\Publish\API\Repository\Values\Content\Language;
-use EzSystems\RepositoryForms\Data\Language\LanguageCreateData;
-use EzSystems\RepositoryForms\Data\Language\LanguageUpdateData;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageCreateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageUpdateData;
 use EzSystems\RepositoryForms\Form\Processor\LanguageFormProcessor;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Form\FormInterface;

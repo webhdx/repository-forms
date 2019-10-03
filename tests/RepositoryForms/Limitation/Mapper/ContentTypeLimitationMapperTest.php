@@ -11,7 +11,7 @@ namespace EzSystems\RepositoryForms\Tests\Limitation\Mapper;
 use eZ\Publish\API\Repository\ContentTypeService;
 use eZ\Publish\API\Repository\Exceptions\NotFoundException;
 use eZ\Publish\API\Repository\Values\User\Limitation\ContentTypeLimitation;
-use EzSystems\RepositoryForms\Limitation\Mapper\ContentTypeLimitationMapper;
+use EzSystems\EzPlatformAdminUi\Limitation\Mapper\ContentTypeLimitationMapper;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 

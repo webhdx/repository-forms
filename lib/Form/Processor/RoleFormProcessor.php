@@ -8,8 +8,8 @@
 namespace EzSystems\RepositoryForms\Form\Processor;
 
 use eZ\Publish\API\Repository\RoleService;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class RoleFormProcessor implements EventSubscriberInterface
@@ -74,7 +74,7 @@ class RoleFormProcessor implements EventSubscriberInterface
      *
      * @param FormActionEvent $event
      *
-     * @return \EzSystems\RepositoryForms\Data\Role\RoleData
+     * @return \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\RoleData
      */
     protected function getRoleData(FormActionEvent $event)
     {

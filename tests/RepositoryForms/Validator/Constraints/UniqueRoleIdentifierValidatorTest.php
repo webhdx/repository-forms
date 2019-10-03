@@ -12,7 +12,7 @@ use eZ\Publish\API\Repository\RoleService;
 use eZ\Publish\API\Repository\Values\User\Role;
 use eZ\Publish\API\Repository\Values\User\RoleDraft;
 use eZ\Publish\Core\Base\Exceptions\NotFoundException;
-use EzSystems\RepositoryForms\Data\Role\RoleData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\RoleData;
 use EzSystems\RepositoryForms\Validator\Constraints\UniqueRoleIdentifier;
 use EzSystems\RepositoryForms\Validator\Constraints\UniqueRoleIdentifierValidator;
 use PHPUnit\Framework\TestCase;

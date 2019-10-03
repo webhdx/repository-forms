@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace EzSystems\RepositoryForms\Form\DataTransformer;
 
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
 use Symfony\Component\Form\DataTransformerInterface;
 
 class MultilingualSelectionTransformer implements DataTransformerInterface
@@ -16,12 +16,12 @@ class MultilingualSelectionTransformer implements DataTransformerInterface
     /** @var string */
     protected $languageCode;
 
-    /** @var \EzSystems\RepositoryForms\Data\FieldDefinitionData */
+    /** @var \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData */
     private $data;
 
     /**
      * @param string $languageCode
-     * @param \EzSystems\RepositoryForms\Data\FieldDefinitionData $data
+     * @param \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData $data
      */
     public function __construct(string $languageCode, FieldDefinitionData $data)
     {

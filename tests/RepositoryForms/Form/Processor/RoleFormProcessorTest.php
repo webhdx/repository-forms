@@ -10,9 +10,9 @@ namespace EzSystems\RepositoryForms\Tests\Form\Processor;
 
 use eZ\Publish\API\Repository\RoleService;
 use eZ\Publish\Core\Repository\Values\User\RoleDraft;
-use EzSystems\RepositoryForms\Data\Role\RoleData;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\RoleData;
 use EzSystems\RepositoryForms\Form\Processor\RoleFormProcessor;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Form\FormInterface;

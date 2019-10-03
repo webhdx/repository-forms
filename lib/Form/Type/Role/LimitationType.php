@@ -8,8 +8,8 @@
 namespace EzSystems\RepositoryForms\Form\Type\Role;
 
 use eZ\Publish\API\Repository\Values\User\Limitation;
-use EzSystems\RepositoryForms\Limitation\LimitationFormMapperInterface;
-use EzSystems\RepositoryForms\Limitation\LimitationFormMapperRegistryInterface;
+use EzSystems\EzPlatformAdminUi\Limitation\LimitationFormMapperInterface;
+use EzSystems\EzPlatformAdminUi\Limitation\LimitationFormMapperRegistryInterface;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormEvent;

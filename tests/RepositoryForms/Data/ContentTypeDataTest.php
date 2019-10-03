@@ -8,11 +8,11 @@
  */
 namespace EzSystems\RepositoryForms\Tests\Data;
 
-use EzSystems\RepositoryForms\Data\ContentTypeData;
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
-use PHPUnit\Framework\TestCase;
 use eZ\Publish\API\Repository\Values\ContentType\ContentTypeDraft;
 use eZ\Publish\API\Repository\Values\ContentType\FieldDefinition;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
+use PHPUnit\Framework\TestCase;
 
 class ContentTypeDataTest extends TestCase
 {

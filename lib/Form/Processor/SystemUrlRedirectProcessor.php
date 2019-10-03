@@ -10,8 +10,8 @@ namespace EzSystems\RepositoryForms\Form\Processor;
 
 use eZ\Publish\API\Repository\LocationService;
 use eZ\Publish\API\Repository\URLAliasService;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\RouterInterface;
@@ -55,7 +55,7 @@ class SystemUrlRedirectProcessor implements EventSubscriberInterface
     }
 
     /**
-     * @param \EzSystems\RepositoryForms\Event\FormActionEvent $event
+     * @param \EzSystems\EzPlatformAdminUi\Event\FormActionEvent $event
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException
@@ -70,7 +70,7 @@ class SystemUrlRedirectProcessor implements EventSubscriberInterface
     }
 
     /**
-     * @param \EzSystems\RepositoryForms\Event\FormActionEvent $event
+     * @param \EzSystems\EzPlatformAdminUi\Event\FormActionEvent $event
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException
@@ -81,7 +81,7 @@ class SystemUrlRedirectProcessor implements EventSubscriberInterface
     }
 
     /**
-     * @param \EzSystems\RepositoryForms\Event\FormActionEvent $event
+     * @param \EzSystems\EzPlatformAdminUi\Event\FormActionEvent $event
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException

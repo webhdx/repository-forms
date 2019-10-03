@@ -12,7 +12,7 @@ use eZ\Publish\API\Repository\URLService;
 use eZ\Publish\API\Repository\Values\Content\Search\SearchHit;
 use eZ\Publish\API\Repository\Values\URL\URL;
 use eZ\Publish\API\Repository\Values\URL\UsageSearchResult;
-use EzSystems\RepositoryForms\Pagination\Pagerfanta\URLUsagesAdapter;
+use EzSystems\EzPlatformAdminUi\Pagination\Pagerfanta\URLUsagesAdapter;
 use PHPUnit\Framework\TestCase;
 
 class URLUsagesAdapterTest extends TestCase

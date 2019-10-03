@@ -7,7 +7,7 @@
  */
 namespace EzSystems\RepositoryForms\Form\ActionDispatcher;
 
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class LanguageDispatcher extends AbstractActionDispatcher

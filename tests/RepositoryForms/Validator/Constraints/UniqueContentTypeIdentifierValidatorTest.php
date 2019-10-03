@@ -12,7 +12,7 @@ use eZ\Publish\API\Repository\ContentTypeService;
 use eZ\Publish\API\Repository\Values\ContentType\ContentType;
 use eZ\Publish\API\Repository\Values\ContentType\ContentTypeDraft;
 use eZ\Publish\Core\Base\Exceptions\NotFoundException;
-use EzSystems\RepositoryForms\Data\ContentTypeData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeData;
 use EzSystems\RepositoryForms\Validator\Constraints\UniqueContentTypeIdentifier;
 use EzSystems\RepositoryForms\Validator\Constraints\UniqueContentTypeIdentifierValidator;
 use PHPUnit\Framework\TestCase;

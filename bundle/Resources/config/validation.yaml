@@ -1,4 +1,4 @@
-EzSystems\RepositoryForms\Data\ContentTypeData:
+EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeData:
     constraints:
         - EzSystems\RepositoryForms\Validator\Constraints\UniqueContentTypeIdentifier: ~
     properties:
@@ -34,7 +34,7 @@ EzSystems\RepositoryForms\Data\ContentTypeData:
         fieldDefinitionsData:
             - Valid: ~
 
-EzSystems\RepositoryForms\Data\FieldDefinitionData:
+EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData:
     constraints:
         - EzSystems\RepositoryForms\Validator\Constraints\UniqueFieldDefinitionIdentifier: ~
         - EzSystems\RepositoryForms\Validator\Constraints\ValidatorConfiguration: ~
@@ -60,7 +60,7 @@ EzSystems\RepositoryForms\Data\FieldDefinitionData:
             - Type:
                 type: integer
 
-EzSystems\RepositoryForms\Data\Role\RoleData:
+EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\RoleData:
     constraints:
         - EzSystems\RepositoryForms\Validator\Constraints\UniqueRoleIdentifier: ~
     properties:
@@ -86,17 +86,17 @@ eZ\Publish\API\Repository\Values\ContentType\ContentTypeGroupStruct:
         identifier:
             - NotBlank: ~
 
-EzSystems\RepositoryForms\Data\Content\ContentCreateData:
+EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentCreateData:
     properties:
         fieldsData:
             - Valid: ~
 
-EzSystems\RepositoryForms\Data\Content\ContentUpdateData:
+EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentUpdateData:
     properties:
         fieldsData:
             - Valid: ~
 
-EzSystems\RepositoryForms\Data\User\UserCreateData:
+EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserCreateData:
     properties:
         login:
             - NotBlank: ~
@@ -107,22 +107,22 @@ EzSystems\RepositoryForms\Data\User\UserCreateData:
         fieldsData:
             - Valid: ~
 
-EzSystems\RepositoryForms\Data\User\UserUpdateData:
+EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserUpdateData:
     properties:
         fieldsData:
             - Valid: ~
 
-EzSystems\RepositoryForms\Data\User\UserAccountFieldData:
+EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserAccountFieldData:
     properties:
         username:
             - Valid: ~
             - NotBlank: ~
 
-EzSystems\RepositoryForms\Data\Content\FieldData:
+EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData:
     constraints:
         - EzSystems\RepositoryForms\Validator\Constraints\FieldValue: ~
 
-EzSystems\RepositoryForms\Data\Language\LanguageCreateData:
+EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageCreateData:
     constraints:
         - EzSystems\RepositoryForms\Validator\Constraints\UniqueLanguageCode: ~
     properties:
@@ -135,7 +135,7 @@ EzSystems\RepositoryForms\Data\Language\LanguageCreateData:
             - Length:
                 max: 255
 
-EzSystems\RepositoryForms\Data\Language\LanguageUpdateData:
+EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageUpdateData:
     constraints:
         - EzSystems\RepositoryForms\Validator\Constraints\UniqueLanguageCode: ~
     properties:
@@ -148,7 +148,7 @@ EzSystems\RepositoryForms\Data\Language\LanguageUpdateData:
             - Length:
                 max: 255
 
-EzSystems\RepositoryForms\Data\URLListData:
+EzSystems\EzPlatformAdminUi\RepositoryForms\Data\URLListData:
     properties:
         url:
             searchQuery:

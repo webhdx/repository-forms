@@ -9,8 +9,8 @@
 namespace EzSystems\RepositoryForms\FieldType\Mapper;
 
 use eZ\Publish\Core\FieldType\Time\Type;
-use EzSystems\RepositoryForms\Data\Content\FieldData;
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
 use EzSystems\RepositoryForms\FieldType\FieldDefinitionFormMapperInterface;
 use EzSystems\RepositoryForms\FieldType\FieldValueFormMapperInterface;
 use EzSystems\RepositoryForms\Form\Type\FieldType\TimeFieldType;

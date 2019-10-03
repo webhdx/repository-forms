@@ -8,9 +8,9 @@
 namespace EzSystems\RepositoryForms\Tests\Data\Mapper;
 
 use eZ\Publish\API\Repository\Values\Content\Language;
-use EzSystems\RepositoryForms\Data\Mapper\LanguageMapper;
-use EzSystems\RepositoryForms\Data\Language\LanguageCreateData;
-use EzSystems\RepositoryForms\Data\Language\LanguageUpdateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageCreateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageUpdateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Mapper\LanguageMapper;
 use PHPUnit\Framework\TestCase;
 
 class LanguageMapperTest extends TestCase

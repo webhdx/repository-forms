@@ -102,7 +102,7 @@ class PolicyType extends AbstractType
             ->add('savePolicy', SubmitType::class, ['label' => 'role.policy.save']);
 
         $builder->addEventListener(FormEvents::PRE_SET_DATA, function (FormEvent $event) {
-            /** @var \EzSystems\RepositoryForms\Data\Role\PolicyCreateData|\EzSystems\RepositoryForms\Data\Role\PolicyUpdateData $data */
+            /** @var \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\PolicyCreateData|\EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\PolicyUpdateData $data */
             $data = $event->getData();
             $form = $event->getForm();
 

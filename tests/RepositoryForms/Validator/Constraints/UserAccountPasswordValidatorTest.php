@@ -8,7 +8,7 @@ use eZ\Publish\API\Repository\UserService;
 use eZ\Publish\API\Repository\Values\ContentType\ContentType;
 use eZ\Publish\API\Repository\Values\User\PasswordValidationContext;
 use eZ\Publish\Core\FieldType\ValidationError;
-use EzSystems\RepositoryForms\Data\User\UserAccountFieldData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserAccountFieldData;
 use EzSystems\RepositoryForms\Validator\Constraints\UserAccountPassword;
 use EzSystems\RepositoryForms\Validator\Constraints\UserAccountPasswordValidator;
 use PHPUnit\Framework\TestCase;

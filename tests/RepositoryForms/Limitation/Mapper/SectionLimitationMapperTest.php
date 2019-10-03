@@ -12,7 +12,7 @@ use eZ\Publish\API\Repository\Exceptions\NotFoundException;
 use eZ\Publish\API\Repository\SectionService;
 use eZ\Publish\API\Repository\Values\Content\Section;
 use eZ\Publish\API\Repository\Values\User\Limitation\SectionLimitation;
-use EzSystems\RepositoryForms\Limitation\Mapper\SectionLimitationMapper;
+use EzSystems\EzPlatformAdminUi\Limitation\Mapper\SectionLimitationMapper;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 

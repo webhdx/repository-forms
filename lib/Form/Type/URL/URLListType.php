@@ -8,7 +8,7 @@
  */
 namespace EzSystems\RepositoryForms\Form\Type\URL;
 
-use EzSystems\RepositoryForms\Data\URL\URLListData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\URL\URLListData;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;

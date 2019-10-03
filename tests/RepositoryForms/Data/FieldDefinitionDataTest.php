@@ -8,9 +8,9 @@
  */
 namespace EzSystems\RepositoryForms\tests\RepositoryForms\Data;
 
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
-use PHPUnit\Framework\TestCase;
 use eZ\Publish\API\Repository\Values\ContentType\FieldDefinition;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
+use PHPUnit\Framework\TestCase;
 
 class FieldDefinitionDataTest extends TestCase
 {

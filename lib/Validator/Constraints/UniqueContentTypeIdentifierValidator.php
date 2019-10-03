@@ -10,7 +10,7 @@ namespace EzSystems\RepositoryForms\Validator\Constraints;
 
 use eZ\Publish\API\Repository\ContentTypeService;
 use eZ\Publish\API\Repository\Exceptions\NotFoundException;
-use EzSystems\RepositoryForms\Data\ContentTypeData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeData;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 

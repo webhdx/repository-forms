@@ -9,7 +9,7 @@
 namespace EzSystems\RepositoryForms\Form\ActionDispatcher;
 
 use eZ\Publish\API\Repository\Values\ValueObject;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;

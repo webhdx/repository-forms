@@ -10,9 +10,9 @@ namespace EzSystems\RepositoryForms\Tests\FieldType;
 
 use eZ\Publish\API\Repository\Values\Content\Field;
 use eZ\Publish\Core\Repository\Values\ContentType\FieldDefinition;
-use EzSystems\RepositoryForms\Data\Content\FieldData;
-use EzSystems\RepositoryForms\Data\ContentTypeData;
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
 use EzSystems\RepositoryForms\FieldType\FieldDefinitionFormMapperInterface;
 use EzSystems\RepositoryForms\FieldType\FieldTypeFormMapperDispatcher;
 use EzSystems\RepositoryForms\FieldType\FieldTypeFormMapperDispatcherInterface;

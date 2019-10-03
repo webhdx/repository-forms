@@ -9,7 +9,7 @@
 namespace EzSystems\RepositoryForms\Tests\Limitation\Mapper;
 
 use eZ\Publish\API\Repository\Values\User\Limitation\UserGroupLimitation;
-use EzSystems\RepositoryForms\Limitation\Mapper\GroupLimitationMapper;
+use EzSystems\EzPlatformAdminUi\Limitation\Mapper\GroupLimitationMapper;
 use PHPUnit\Framework\TestCase;
 use Symfony\Contracts\Translation\TranslatorInterface;
 

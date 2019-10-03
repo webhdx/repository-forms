@@ -12,7 +12,7 @@ use eZ\Publish\API\Repository\Exceptions\NotFoundException;
 use eZ\Publish\API\Repository\Exceptions\UnauthorizedException;
 use eZ\Publish\API\Repository\LocationService;
 use eZ\Publish\API\Repository\Values\Content\Location;
-use EzSystems\RepositoryForms\Limitation\DataTransformer\UDWBasedValueModelTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\UDWBasedValueModelTransformer;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Form\Exception\TransformationFailedException;
 
@@ -21,7 +21,7 @@ class UDWBasedValueModelTransformerTest extends TestCase
     /** @var \eZ\Publish\API\Repository\LocationService|\PHPUnit\Framework\MockObject\MockObject */
     private $locationService;
 
-    /** @var \EzSystems\RepositoryForms\Limitation\DataTransformer\UDWBasedValueModelTransformer */
+    /** @var \EzSystems\EzPlatformAdminUi\Form\DataTransformer\UDWBasedValueModelTransformer */
     private $transformer;
 
     protected function setUp(): void

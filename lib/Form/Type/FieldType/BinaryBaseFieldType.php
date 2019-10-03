@@ -5,7 +5,7 @@
  */
 namespace EzSystems\RepositoryForms\Form\Type\FieldType;
 
-use EzSystems\RepositoryForms\ConfigResolver\MaxUploadSize;
+use EzSystems\EzPlatformAdminUi\ConfigResolver\MaxUploadSize;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;

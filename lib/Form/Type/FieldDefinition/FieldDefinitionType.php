@@ -57,7 +57,7 @@ class FieldDefinitionType extends AbstractType
     {
         $resolver
             ->setDefaults([
-                'data_class' => 'EzSystems\RepositoryForms\Data\FieldDefinitionData',
+                'data_class' => 'EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData',
                 'translation_domain' => 'ezrepoforms_content_type',
                 'mainLanguageCode' => null,
             ])
@@ -132,7 +132,7 @@ class FieldDefinitionType extends AbstractType
 
         // Hook on form generation for specific FieldType needs
         $builder->addEventListener(FormEvents::PRE_SET_DATA, function (FormEvent $event) {
-            /** @var \EzSystems\RepositoryForms\Data\FieldDefinitionData $data */
+            /** @var \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData $data */
             $data = $event->getData();
             $form = $event->getForm();
             $fieldTypeIdentifier = $data->getFieldTypeIdentifier();

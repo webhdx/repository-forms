@@ -9,7 +9,7 @@
 namespace EzSystems\RepositoryForms\Tests\Limitation\Mapper;
 
 use eZ\Publish\API\Repository\Values\User\Limitation\SiteAccessLimitation;
-use EzSystems\RepositoryForms\Limitation\Mapper\SiteAccessLimitationMapper;
+use EzSystems\EzPlatformAdminUi\Limitation\Mapper\SiteAccessLimitationMapper;
 use PHPUnit\Framework\TestCase;
 
 class SiteAccessLimitationMapperTest extends TestCase

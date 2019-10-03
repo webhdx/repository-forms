@@ -8,8 +8,8 @@
  */
 namespace EzSystems\RepositoryForms\FieldType;
 
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData;
 use Symfony\Component\Form\FormInterface;
-use EzSystems\RepositoryForms\Data\Content\FieldData;
 
 interface FieldValueFormMapperInterface extends FieldFormMapperInterface
 {

@@ -9,7 +9,7 @@ namespace EzSystems\RepositoryForms\Validator\Constraints;
 
 use eZ\Publish\API\Repository\Exceptions\NotFoundException;
 use eZ\Publish\API\Repository\SectionService;
-use EzSystems\RepositoryForms\Data\Section\SectionUpdateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Section\SectionUpdateData;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidator;
 

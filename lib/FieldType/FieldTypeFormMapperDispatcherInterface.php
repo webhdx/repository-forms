@@ -8,8 +8,8 @@
  */
 namespace EzSystems\RepositoryForms\FieldType;
 
-use EzSystems\RepositoryForms\Data\Content\FieldData;
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
 use Symfony\Component\Form\FormInterface;
 
 /**

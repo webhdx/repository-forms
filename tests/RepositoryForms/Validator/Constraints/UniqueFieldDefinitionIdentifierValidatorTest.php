@@ -8,8 +8,8 @@
  */
 namespace EzSystems\RepositoryForms\Tests\Validator\Constraints;
 
-use EzSystems\RepositoryForms\Data\ContentTypeData;
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
 use EzSystems\RepositoryForms\Validator\Constraints\UniqueFieldDefinitionIdentifier;
 use EzSystems\RepositoryForms\Validator\Constraints\UniqueFieldDefinitionIdentifierValidator;
 use PHPUnit\Framework\TestCase;

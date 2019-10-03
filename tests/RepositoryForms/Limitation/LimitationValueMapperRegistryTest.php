@@ -8,9 +8,9 @@
  */
 namespace EzSystems\RepositoryForms\Tests\Limitation;
 
-use EzSystems\RepositoryForms\Limitation\Exception\ValueMapperNotFoundException;
-use EzSystems\RepositoryForms\Limitation\LimitationValueMapperInterface;
-use EzSystems\RepositoryForms\Limitation\LimitationValueMapperRegistry;
+use EzSystems\EzPlatformAdminUi\Exception\ValueMapperNotFoundException;
+use EzSystems\EzPlatformAdminUi\Limitation\LimitationValueMapperInterface;
+use EzSystems\EzPlatformAdminUi\Limitation\LimitationValueMapperRegistry;
 use PHPUnit\Framework\TestCase;
 
 class LimitationValueMapperRegistryTest extends TestCase

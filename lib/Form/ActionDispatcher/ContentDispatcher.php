@@ -8,7 +8,7 @@
 namespace EzSystems\RepositoryForms\Form\ActionDispatcher;
 
 use eZ\Publish\API\Repository\Values\Content\Location;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class ContentDispatcher extends AbstractActionDispatcher

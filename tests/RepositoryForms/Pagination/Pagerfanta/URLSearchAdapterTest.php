@@ -14,7 +14,7 @@ use eZ\Publish\API\Repository\Values\URL\Query\SortClause;
 use eZ\Publish\API\Repository\Values\URL\SearchResult;
 use eZ\Publish\API\Repository\Values\URL\URL;
 use eZ\Publish\API\Repository\Values\URL\URLQuery;
-use EzSystems\RepositoryForms\Pagination\Pagerfanta\URLSearchAdapter;
+use EzSystems\EzPlatformAdminUi\Pagination\Pagerfanta\URLSearchAdapter;
 use PHPUnit\Framework\TestCase;
 
 class URLSearchAdapterTest extends TestCase

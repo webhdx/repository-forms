@@ -9,7 +9,7 @@
 namespace EzSystems\RepositoryForms\Tests\Limitation\Mapper;
 
 use eZ\Publish\API\Repository\Values\User\Limitation\ParentDepthLimitation;
-use EzSystems\RepositoryForms\Limitation\Mapper\ParentDepthLimitationMapper;
+use EzSystems\EzPlatformAdminUi\Limitation\Mapper\ParentDepthLimitationMapper;
 use PHPUnit\Framework\TestCase;
 
 class ParentDepthLimitationMapperTest extends TestCase

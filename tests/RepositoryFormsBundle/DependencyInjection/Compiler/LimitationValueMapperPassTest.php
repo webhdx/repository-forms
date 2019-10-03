@@ -8,7 +8,7 @@
  */
 namespace EzSystems\RepositoryFormsBundle\Tests\DependencyInjection\Compiler;
 
-use EzSystems\RepositoryForms\Limitation\LimitationValueMapperInterface;
+use EzSystems\EzPlatformAdminUi\Limitation\LimitationValueMapperInterface;
 use EzSystems\RepositoryFormsBundle\DependencyInjection\Compiler\LimitationValueMapperPass;
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractCompilerPassTestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

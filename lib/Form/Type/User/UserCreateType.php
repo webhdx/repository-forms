@@ -7,7 +7,7 @@
  */
 namespace EzSystems\RepositoryForms\Form\Type\User;
 
-use EzSystems\RepositoryForms\Data\User\UserCreateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserCreateData;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -15,7 +15,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
  * Form type for content edition (create/update).
- * Underlying data will be either \EzSystems\RepositoryForms\Data\Content\ContentCreateData or \EzSystems\RepositoryForms\Data\Content\ContentUpdateData
+ * Underlying data will be either \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentCreateData or \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentUpdateData
  * depending on the context (create or update).
  */
 class UserCreateType extends AbstractType

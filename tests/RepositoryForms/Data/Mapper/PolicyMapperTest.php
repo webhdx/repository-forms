@@ -11,9 +11,9 @@ use eZ\Publish\Core\Repository\Values\User\Policy;
 use eZ\Publish\Core\Repository\Values\User\PolicyDraft;
 use eZ\Publish\Core\Repository\Values\User\Role;
 use eZ\Publish\Core\Repository\Values\User\RoleDraft;
-use EzSystems\RepositoryForms\Data\Mapper\PolicyMapper;
-use EzSystems\RepositoryForms\Data\Role\PolicyCreateData;
-use EzSystems\RepositoryForms\Data\Role\PolicyUpdateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Mapper\PolicyMapper;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\PolicyCreateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\PolicyUpdateData;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\OptionsResolver\Exception\MissingOptionsException;
 

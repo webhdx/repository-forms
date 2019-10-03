@@ -9,7 +9,7 @@
 namespace EzSystems\RepositoryForms\Validator\Constraints;
 
 use eZ\Publish\API\Repository\Values\ValueObject;
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
 
 /**
  * Validator for default value from FieldDefinitionData.

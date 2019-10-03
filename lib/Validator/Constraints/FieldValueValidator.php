@@ -10,10 +10,10 @@ namespace EzSystems\RepositoryForms\Validator\Constraints;
 
 use eZ\Publish\API\Repository\Values\ValueObject;
 use eZ\Publish\Core\FieldType\ValidationError;
-use EzSystems\RepositoryForms\Data\Content\FieldData;
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
-use Symfony\Component\Validator\Util\PropertyPath;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
 use Symfony\Component\Validator\Constraint;
+use Symfony\Component\Validator\Util\PropertyPath;
 
 /**
  * Base class for field value validators.

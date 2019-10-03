@@ -8,8 +8,8 @@
 namespace EzSystems\RepositoryForms\Form\Processor;
 
 use eZ\Publish\API\Repository\SectionService;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class SectionFormProcessor implements EventSubscriberInterface
@@ -33,7 +33,7 @@ class SectionFormProcessor implements EventSubscriberInterface
 
     public function processUpdate(FormActionEvent $event)
     {
-        /** @var \EzSystems\RepositoryForms\Data\Section\SectionUpdateData|\EzSystems\RepositoryForms\Data\Section\SectionCreateData $sectionData */
+        /** @var \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Section\SectionUpdateData|\EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Section\SectionCreateData $sectionData */
         $sectionData = $event->getData();
         if ($sectionData->isNew()) {
             $section = $this->sectionService->createSection($sectionData);

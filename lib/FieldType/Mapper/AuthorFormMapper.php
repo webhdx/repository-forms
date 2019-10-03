@@ -9,8 +9,8 @@
 namespace EzSystems\RepositoryForms\FieldType\Mapper;
 
 use eZ\Publish\Core\FieldType\Author\Type;
-use EzSystems\RepositoryForms\Data\Content\FieldData;
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
 use EzSystems\RepositoryForms\FieldType\FieldDefinitionFormMapperInterface;
 use EzSystems\RepositoryForms\FieldType\FieldValueFormMapperInterface;
 use EzSystems\RepositoryForms\Form\Type\FieldType\AuthorFieldType;
@@ -25,7 +25,7 @@ class AuthorFormMapper implements FieldDefinitionFormMapperInterface, FieldValue
 {
     /**
      * @param \Symfony\Component\Form\FormInterface $fieldDefinitionForm
-     * @param \EzSystems\RepositoryForms\Data\FieldDefinitionData $data
+     * @param \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData $data
      */
     public function mapFieldDefinitionForm(FormInterface $fieldDefinitionForm, FieldDefinitionData $data)
     {
@@ -51,7 +51,7 @@ class AuthorFormMapper implements FieldDefinitionFormMapperInterface, FieldValue
 
     /**
      * @param \Symfony\Component\Form\FormInterface $fieldForm
-     * @param \EzSystems\RepositoryForms\Data\Content\FieldData $data
+     * @param \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData $data
      */
     public function mapFieldValueForm(FormInterface $fieldForm, FieldData $data)
     {

@@ -9,10 +9,10 @@ namespace EzSystems\RepositoryForms\Tests\Form\Processor;
 
 use eZ\Publish\API\Repository\ContentTypeService;
 use eZ\Publish\Core\Repository\Values\ContentType\ContentTypeGroup;
-use EzSystems\RepositoryForms\Data\ContentTypeGroup\ContentTypeGroupCreateData;
-use EzSystems\RepositoryForms\Data\ContentTypeGroup\ContentTypeGroupUpdateData;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeGroup\ContentTypeGroupCreateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeGroup\ContentTypeGroupUpdateData;
 use EzSystems\RepositoryForms\Form\Processor\ContentTypeGroupFormProcessor;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Form\FormInterface;

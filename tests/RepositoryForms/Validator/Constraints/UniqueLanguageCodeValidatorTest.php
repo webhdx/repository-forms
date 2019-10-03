@@ -12,7 +12,7 @@ use eZ\Publish\API\Repository\LanguageService;
 use eZ\Publish\API\Repository\Values\Content\Language;
 use eZ\Publish\Core\Base\Exceptions\InvalidArgumentException;
 use eZ\Publish\Core\Base\Exceptions\NotFoundException;
-use EzSystems\RepositoryForms\Data\Language\LanguageCreateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageCreateData;
 use EzSystems\RepositoryForms\Validator\Constraints\UniqueLanguageCode;
 use EzSystems\RepositoryForms\Validator\Constraints\UniqueLanguageCodeValidator;
 use PHPUnit\Framework\TestCase;

@@ -18,7 +18,7 @@ use eZ\Publish\API\Repository\Values\Content\Search\SearchHit;
 use eZ\Publish\API\Repository\Values\Content\Search\SearchResult;
 use eZ\Publish\API\Repository\Values\User\Limitation\SubtreeLimitation;
 use eZ\Publish\Core\Repository\Values\Content\Location;
-use EzSystems\RepositoryForms\Limitation\Mapper\UDWBasedMapper;
+use EzSystems\EzPlatformAdminUi\Limitation\Mapper\UDWBasedMapper;
 use PHPUnit\Framework\TestCase;
 
 class UDWBasedMapperTest extends TestCase

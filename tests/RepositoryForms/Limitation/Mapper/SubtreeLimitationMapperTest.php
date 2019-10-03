@@ -18,7 +18,7 @@ use eZ\Publish\API\Repository\Values\Content\Query\SortClause\Location\Path;
 use eZ\Publish\API\Repository\Values\Content\Search\SearchHit;
 use eZ\Publish\API\Repository\Values\Content\Search\SearchResult;
 use eZ\Publish\API\Repository\Values\User\Limitation\SubtreeLimitation;
-use EzSystems\RepositoryForms\Limitation\Mapper\SubtreeLimitationMapper;
+use EzSystems\EzPlatformAdminUi\Limitation\Mapper\SubtreeLimitationMapper;
 use PHPUnit\Framework\TestCase;
 
 class SubtreeLimitationMapperTest extends TestCase

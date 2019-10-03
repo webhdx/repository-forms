@@ -8,7 +8,7 @@
  */
 namespace EzSystems\RepositoryForms\FieldType\Mapper;
 
-use EzSystems\RepositoryForms\Data\Content\FieldData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData;
 use EzSystems\RepositoryForms\FieldType\FieldValueFormMapperInterface;
 use EzSystems\RepositoryForms\Form\Type\FieldType\UrlFieldType;
 use Symfony\Component\Form\FormInterface;

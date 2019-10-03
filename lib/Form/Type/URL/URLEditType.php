@@ -8,7 +8,7 @@
  */
 namespace EzSystems\RepositoryForms\Form\Type\URL;
 
-use EzSystems\RepositoryForms\Data\URL\URLUpdateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\URL\URLUpdateData;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;

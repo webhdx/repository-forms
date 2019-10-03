@@ -14,8 +14,8 @@ use eZ\Publish\API\Repository\Values\ContentType\FieldDefinition;
 use eZ\Publish\API\Repository\Values\ContentType\FieldDefinitionCreateStruct;
 use eZ\Publish\Core\Base\Exceptions\InvalidArgumentException;
 use eZ\Publish\Core\Helper\FieldsGroups\FieldsGroupsList;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\RouterInterface;
@@ -78,7 +78,7 @@ class ContentTypeFormProcessor implements EventSubscriberInterface
         }
 
         // Always update FieldDefinitions and ContentTypeDraft
-        /** @var \EzSystems\RepositoryForms\Data\ContentTypeData $contentTypeData */
+        /** @var \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeData $contentTypeData */
         $contentTypeData = $event->getData();
         $contentTypeDraft = $contentTypeData->contentTypeDraft;
         foreach ($contentTypeData->fieldDefinitionsData as $fieldDefData) {

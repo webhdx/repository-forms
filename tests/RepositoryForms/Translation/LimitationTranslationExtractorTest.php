@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace EzSystems\RepositoryForms\Tests\Translation;
 
-use EzSystems\RepositoryForms\Translation\LimitationTranslationExtractor;
+use EzSystems\EzPlatformAdminUi\Translation\Extractor\LimitationTranslationExtractor;
 use JMS\TranslationBundle\Model\Message;
 use JMS\TranslationBundle\Model\MessageCatalogue;
 use PHPUnit\Framework\TestCase;

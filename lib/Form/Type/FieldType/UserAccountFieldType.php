@@ -7,7 +7,7 @@
  */
 namespace EzSystems\RepositoryForms\Form\Type\FieldType;
 
-use EzSystems\RepositoryForms\Data\User\UserAccountFieldData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserAccountFieldData;
 use EzSystems\RepositoryForms\Form\Type\SwitcherType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;

@@ -12,7 +12,7 @@ use eZ\Publish\API\Repository\FieldType;
 use eZ\Publish\API\Repository\FieldTypeService;
 use eZ\Publish\Core\FieldType\ValidationError;
 use eZ\Publish\Core\Repository\Values\ContentType\FieldDefinition;
-use EzSystems\RepositoryForms\Data\FieldDefinitionData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
 use EzSystems\RepositoryForms\Validator\Constraints\FieldSettings;
 use EzSystems\RepositoryForms\Validator\Constraints\FieldSettingsValidator;
 use PHPUnit\Framework\TestCase;

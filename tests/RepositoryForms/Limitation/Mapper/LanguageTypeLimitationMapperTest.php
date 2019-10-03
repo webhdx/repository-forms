@@ -11,7 +11,7 @@ namespace EzSystems\RepositoryForms\Tests\Limitation\Mapper;
 use eZ\Publish\API\Repository\Exceptions\NotFoundException;
 use eZ\Publish\API\Repository\LanguageService;
 use eZ\Publish\API\Repository\Values\User\Limitation\LanguageLimitation;
-use EzSystems\RepositoryForms\Limitation\Mapper\LanguageLimitationMapper;
+use EzSystems\EzPlatformAdminUi\Limitation\Mapper\LanguageLimitationMapper;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
 

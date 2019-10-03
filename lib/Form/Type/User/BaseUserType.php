@@ -17,7 +17,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 
 /**
  * Form type for content edition (create/update).
- * Underlying data will be either \EzSystems\RepositoryForms\Data\Content\ContentCreateData or \EzSystems\RepositoryForms\Data\Content\ContentUpdateData
+ * Underlying data will be either \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentCreateData or \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentUpdateData
  * depending on the context (create or update).
  */
 class BaseUserType extends AbstractType

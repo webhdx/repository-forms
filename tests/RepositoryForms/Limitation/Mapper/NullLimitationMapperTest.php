@@ -9,7 +9,7 @@
 namespace EzSystems\RepositoryForms\Tests\Limitation\Mapper;
 
 use eZ\Publish\API\Repository\Values\User\Limitation\ContentTypeLimitation;
-use EzSystems\RepositoryForms\Limitation\Mapper\NullLimitationMapper;
+use EzSystems\EzPlatformAdminUi\Limitation\Mapper\NullLimitationMapper;
 use PHPUnit\Framework\TestCase;
 
 class NullLimitationMapperTest extends TestCase

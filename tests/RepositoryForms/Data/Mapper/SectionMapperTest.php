@@ -8,9 +8,9 @@
 namespace EzSystems\RepositoryForms\Tests\Data\Mapper;
 
 use eZ\Publish\API\Repository\Values\Content\Section;
-use EzSystems\RepositoryForms\Data\Mapper\SectionMapper;
-use EzSystems\RepositoryForms\Data\Section\SectionCreateData;
-use EzSystems\RepositoryForms\Data\Section\SectionUpdateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Mapper\SectionMapper;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Section\SectionCreateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Section\SectionUpdateData;
 use PHPUnit\Framework\TestCase;
 
 class SectionMapperTest extends TestCase

@@ -13,11 +13,11 @@ use eZ\Publish\API\Repository\Values\Content\Content;
 use eZ\Publish\API\Repository\Values\Content\ContentStruct;
 use eZ\Publish\API\Repository\Values\Content\Location;
 use eZ\Publish\Core\Base\Exceptions\InvalidArgumentException;
-use EzSystems\RepositoryForms\Data\Content\ContentCreateData;
-use EzSystems\RepositoryForms\Data\Content\ContentUpdateData;
-use EzSystems\RepositoryForms\Data\NewnessCheckable;
-use EzSystems\RepositoryForms\Event\FormActionEvent;
-use EzSystems\RepositoryForms\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
+use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentCreateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentUpdateData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\NewnessCheckable;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
@@ -67,7 +67,7 @@ class ContentFormProcessor implements EventSubscriberInterface
     }
 
     /**
-     * @param \EzSystems\RepositoryForms\Event\FormActionEvent $event
+     * @param \EzSystems\EzPlatformAdminUi\Event\FormActionEvent $event
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\BadStateException
      * @throws \eZ\Publish\API\Repository\Exceptions\ContentFieldValidationException
@@ -79,7 +79,7 @@ class ContentFormProcessor implements EventSubscriberInterface
      */
     public function processSaveDraft(FormActionEvent $event)
     {
-        /** @var \EzSystems\RepositoryForms\Data\Content\ContentCreateData|\EzSystems\RepositoryForms\Data\Content\ContentUpdateData $data */
+        /** @var \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentCreateData|\EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentUpdateData $data */
         $data = $event->getData();
         $form = $event->getForm();
 
@@ -102,7 +102,7 @@ class ContentFormProcessor implements EventSubscriberInterface
     }
 
     /**
-     * @param \EzSystems\RepositoryForms\Event\FormActionEvent $event
+     * @param \EzSystems\EzPlatformAdminUi\Event\FormActionEvent $event
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\BadStateException
      * @throws \eZ\Publish\API\Repository\Exceptions\ContentFieldValidationException
@@ -113,7 +113,7 @@ class ContentFormProcessor implements EventSubscriberInterface
      */
     public function processPublish(FormActionEvent $event)
     {
-        /** @var \EzSystems\RepositoryForms\Data\Content\ContentCreateData|\EzSystems\RepositoryForms\Data\Content\ContentUpdateData $data */
+        /** @var \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentCreateData|\EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentUpdateData $data */
         $data = $event->getData();
         $form = $event->getForm();
 
@@ -134,14 +134,14 @@ class ContentFormProcessor implements EventSubscriberInterface
     }
 
     /**
-     * @param \EzSystems\RepositoryForms\Event\FormActionEvent $event
+     * @param \EzSystems\EzPlatformAdminUi\Event\FormActionEvent $event
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\BadStateException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException
      */
     public function processCancel(FormActionEvent $event)
     {
-        /** @var \EzSystems\RepositoryForms\Data\Content\ContentCreateData|\EzSystems\RepositoryForms\Data\Content\ContentUpdateData $data */
+        /** @var \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentCreateData|\EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentUpdateData $data */
         $data = $event->getData();
 
         if ($data->isNew()) {
@@ -180,14 +180,14 @@ class ContentFormProcessor implements EventSubscriberInterface
     }
 
     /**
-     * @param \EzSystems\RepositoryForms\Event\FormActionEvent $event
+     * @param \EzSystems\EzPlatformAdminUi\Event\FormActionEvent $event
      *
      * @throws \eZ\Publish\API\Repository\Exceptions\NotFoundException
      * @throws \eZ\Publish\API\Repository\Exceptions\UnauthorizedException
      */
     public function processCreateDraft(FormActionEvent $event)
     {
-        /** @var $createContentDraft \EzSystems\RepositoryForms\Data\Content\CreateContentDraftData */
+        /** @var $createContentDraft \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\CreateContentDraftData */
         $createContentDraft = $event->getData();
 
         $contentInfo = $this->contentService->loadContentInfo($createContentDraft->contentId);
@@ -211,7 +211,7 @@ class ContentFormProcessor implements EventSubscriberInterface
      * Saves content draft corresponding to $data.
      * Depending on the nature of $data (create or update data), the draft will either be created or simply updated.
      *
-     * @param ContentStruct|\EzSystems\RepositoryForms\Data\Content\ContentCreateData|\EzSystems\RepositoryForms\Data\Content\ContentUpdateData $data
+     * @param ContentStruct|\EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentCreateData|\EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentUpdateData $data
      * @param $languageCode
      *
      * @return \eZ\Publish\API\Repository\Values\Content\Content
@@ -244,7 +244,7 @@ class ContentFormProcessor implements EventSubscriberInterface
     }
 
     /**
-     * @param \EzSystems\RepositoryForms\Data\Content\ContentUpdateData|\EzSystems\RepositoryForms\Data\Content\ContentCreateData $data
+     * @param \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentUpdateData|\EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\ContentCreateData $data
      *
      * @return string
      *
@@ -267,7 +267,7 @@ class ContentFormProcessor implements EventSubscriberInterface
     /**
      * @param \eZ\Publish\API\Repository\Values\Content\Content $content
      * @param \eZ\Publish\API\Repository\Values\Content\Location|null $referrerLocation
-     * @param \EzSystems\RepositoryForms\Data\NewnessCheckable $data
+     * @param \EzSystems\EzPlatformAdminUi\RepositoryForms\Data\NewnessCheckable $data
      *
      * @return \eZ\Publish\API\Repository\Values\Content\Location|null
      *

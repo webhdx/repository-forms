@@ -9,7 +9,7 @@
 namespace EzSystems\RepositoryForms\FieldType\Mapper;
 
 use eZ\Publish\API\Repository\FieldTypeService;
-use EzSystems\RepositoryForms\Data\Content\FieldData;
+use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData;
 use EzSystems\RepositoryForms\FieldType\DataTransformer\FieldValueTransformer;
 use EzSystems\RepositoryForms\FieldType\FieldValueFormMapperInterface;
 use Symfony\Component\Form\FormInterface;
