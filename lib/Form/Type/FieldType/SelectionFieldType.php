@@ -5,8 +5,8 @@
  */
 namespace EzSystems\RepositoryForms\Form\Type\FieldType;
 
-use EzSystems\RepositoryForms\FieldType\DataTransformer\MultiSelectionValueTransformer;
-use EzSystems\RepositoryForms\FieldType\DataTransformer\SingleSelectionValueTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\MultiSelectionValueTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\SingleSelectionValueTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;

@@ -8,7 +8,7 @@
  */
 namespace EzSystems\RepositoryForms\Tests\Form\DataTransformer;
 
-use EzSystems\RepositoryForms\Form\DataTransformer\TranslatablePropertyTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\TranslatablePropertyTransformer;
 use PHPUnit\Framework\TestCase;
 
 class TranslatablePropertyTransformerTest extends TestCase

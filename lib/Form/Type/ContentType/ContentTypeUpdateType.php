@@ -8,7 +8,7 @@
  */
 namespace EzSystems\RepositoryForms\Form\Type\ContentType;
 
-use EzSystems\RepositoryForms\Form\DataTransformer\TranslatablePropertyTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\TranslatablePropertyTransformer;
 use EzSystems\RepositoryForms\Form\Type\FieldDefinition\FieldDefinitionType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;

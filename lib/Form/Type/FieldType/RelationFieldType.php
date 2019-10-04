@@ -9,7 +9,7 @@ use eZ\Publish\API\Repository\ContentService;
 use eZ\Publish\API\Repository\ContentTypeService;
 use eZ\Publish\API\Repository\Values\Content\Location;
 use eZ\Publish\Core\FieldType\Relation\Value;
-use EzSystems\RepositoryForms\FieldType\DataTransformer\RelationValueTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\RelationValueTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\FormBuilderInterface;

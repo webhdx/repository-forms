@@ -10,8 +10,8 @@ namespace EzSystems\RepositoryForms\Form\Type\FieldDefinition;
 
 use eZ\Publish\API\Repository\FieldTypeService;
 use eZ\Publish\Core\Helper\FieldsGroups\FieldsGroupsList;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\TranslatablePropertyTransformer;
 use EzSystems\RepositoryForms\FieldType\FieldTypeFormMapperDispatcherInterface;
-use EzSystems\RepositoryForms\Form\DataTransformer\TranslatablePropertyTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;

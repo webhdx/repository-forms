@@ -7,8 +7,8 @@
  */
 namespace EzSystems\RepositoryForms\Form\Type\User;
 
-use EzSystems\RepositoryForms\Form\EventSubscriber\SuppressValidationSubscriber;
-use EzSystems\RepositoryForms\Form\EventSubscriber\UserFieldsSubscriber;
+use EzSystems\EzPlatformAdminUi\Form\EventSubscriber\SuppressValidationSubscriber;
+use EzSystems\EzPlatformAdminUi\Form\EventSubscriber\UserFieldsSubscriber;
 use EzSystems\RepositoryForms\Form\Type\Content\BaseContentType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;

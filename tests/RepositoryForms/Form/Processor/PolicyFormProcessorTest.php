@@ -14,8 +14,8 @@ use eZ\Publish\Core\Repository\Values\User\Role;
 use eZ\Publish\Core\Repository\Values\User\RoleDraft;
 use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
 use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Form\Processor\PolicyFormProcessor;
 use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Mapper\PolicyMapper;
-use EzSystems\RepositoryForms\Form\Processor\PolicyFormProcessor;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Form\FormInterface;
 

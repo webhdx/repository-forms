@@ -5,8 +5,8 @@
  */
 namespace EzSystems\RepositoryForms\Form\Type\FieldType;
 
-use EzSystems\RepositoryForms\FieldType\DataTransformer\MultipleCountryValueTransformer;
-use EzSystems\RepositoryForms\FieldType\DataTransformer\SingleCountryValueTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\MultipleCountryValueTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\SingleCountryValueTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;

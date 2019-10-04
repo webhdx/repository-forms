@@ -9,8 +9,8 @@ namespace EzSystems\RepositoryForms\Tests\FieldType\Mapper;
 
 use eZ\Publish\API\Repository\Values\ContentType\ContentType;
 use eZ\Publish\Core\Repository\Values\ContentType\FieldDefinition;
+use EzSystems\EzPlatformAdminUi\Form\FieldTypeMapper\UserAccountFieldValueFormMapper;
 use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserCreateData;
-use EzSystems\RepositoryForms\FieldType\Mapper\UserAccountFieldValueFormMapper;
 use Symfony\Component\Form\FormConfigInterface;
 use Symfony\Component\Form\FormInterface;
 

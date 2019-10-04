@@ -6,7 +6,7 @@
 namespace EzSystems\RepositoryForms\Form\Type\FieldType;
 
 use eZ\Publish\API\Repository\FieldTypeService;
-use EzSystems\RepositoryForms\FieldType\DataTransformer\FieldValueTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\FieldValueTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\FormBuilderInterface;

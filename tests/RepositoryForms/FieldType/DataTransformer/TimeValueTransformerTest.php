@@ -9,10 +9,10 @@
 namespace EzSystems\RepositoryForms\Tests\FieldType\DataTransformer;
 
 use DateTime;
+use eZ\Publish\Core\FieldType\Time\Value;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\TimeValueTransformer;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Form\Exception\TransformationFailedException;
-use eZ\Publish\Core\FieldType\Time\Value;
-use EzSystems\RepositoryForms\FieldType\DataTransformer\TimeValueTransformer;
 
 class TimeValueTransformerTest extends TestCase
 {

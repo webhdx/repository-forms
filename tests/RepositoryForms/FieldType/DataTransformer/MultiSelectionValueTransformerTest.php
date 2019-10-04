@@ -9,7 +9,7 @@
 namespace EzSystems\RepositoryForms\Tests\FieldType\DataTransformer;
 
 use eZ\Publish\Core\FieldType\Selection\Value;
-use EzSystems\RepositoryForms\FieldType\DataTransformer\MultiSelectionValueTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\MultiSelectionValueTransformer;
 use PHPUnit\Framework\TestCase;
 
 class MultiSelectionValueTransformerTest extends TestCase

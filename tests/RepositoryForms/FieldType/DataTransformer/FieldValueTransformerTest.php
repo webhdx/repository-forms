@@ -10,7 +10,7 @@ namespace EzSystems\RepositoryForms\Tests\FieldType\DataTransformer;
 
 use eZ\Publish\API\Repository\FieldType;
 use eZ\Publish\SPI\FieldType\Value;
-use EzSystems\RepositoryForms\FieldType\DataTransformer\FieldValueTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\FieldValueTransformer;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 

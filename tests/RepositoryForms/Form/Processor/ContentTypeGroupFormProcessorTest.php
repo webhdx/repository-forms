@@ -11,9 +11,9 @@ use eZ\Publish\API\Repository\ContentTypeService;
 use eZ\Publish\Core\Repository\Values\ContentType\ContentTypeGroup;
 use EzSystems\EzPlatformAdminUi\Event\FormActionEvent;
 use EzSystems\EzPlatformAdminUi\Event\RepositoryFormEvents;
+use EzSystems\EzPlatformAdminUi\Form\Processor\ContentTypeGroupFormProcessor;
 use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeGroup\ContentTypeGroupCreateData;
 use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeGroup\ContentTypeGroupUpdateData;
-use EzSystems\RepositoryForms\Form\Processor\ContentTypeGroupFormProcessor;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Form\FormInterface;
 

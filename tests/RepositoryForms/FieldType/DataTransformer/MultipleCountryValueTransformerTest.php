@@ -11,7 +11,7 @@
 namespace EzSystems\RepositoryForms\Tests\FieldType\DataTransformer;
 
 use eZ\Publish\Core\FieldType\Country\Value;
-use EzSystems\RepositoryForms\FieldType\DataTransformer\MultipleCountryValueTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\MultipleCountryValueTransformer;
 use PHPUnit\Framework\TestCase;
 
 class MultipleCountryValueTransformerTest extends TestCase

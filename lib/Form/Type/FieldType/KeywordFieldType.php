@@ -5,7 +5,7 @@
  */
 namespace EzSystems\RepositoryForms\Form\Type\FieldType;
 
-use EzSystems\RepositoryForms\FieldType\DataTransformer\KeywordValueTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\KeywordValueTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;

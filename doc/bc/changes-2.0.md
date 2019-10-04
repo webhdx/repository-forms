@@ -45,8 +45,8 @@ Changes affecting version compatibility with former or future versions.
 
 ## Removed features
 
-- `\EzSystems\RepositoryForms\FieldType\DataTransformer\CountryValueTransformer`
-  What changed: `\EzSystems\RepositoryForms\FieldType\DataTransformer\CountryValueTransformer` has been removed.
+- `\EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\CountryValueTransformer`
+  What changed: `\EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\CountryValueTransformer` has been removed.
 
   How it might affect your code: If you were extending or using `CountryValueTransformer` you can now use `MultipleCountryValueTransformer` which is 1:1 functionality-wise.
 

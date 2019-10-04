@@ -8,7 +8,7 @@
  */
 namespace EzSystems\RepositoryForms\Form\Type;
 
-use EzSystems\RepositoryForms\Form\DataTransformer\DateIntervalToArrayTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\DateIntervalToArrayTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\FormType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;

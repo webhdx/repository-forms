@@ -9,7 +9,7 @@
 namespace EzSystems\RepositoryForms\Tests\FieldType\DataTransformer;
 
 use eZ\Publish\Core\FieldType\Selection\Value;
-use EzSystems\RepositoryForms\FieldType\DataTransformer\SingleSelectionValueTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\SingleSelectionValueTransformer;
 use PHPUnit\Framework\TestCase;
 
 class SingleSelectionValueTransformerTest extends TestCase

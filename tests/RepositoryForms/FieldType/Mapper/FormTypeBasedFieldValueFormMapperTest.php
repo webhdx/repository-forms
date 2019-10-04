@@ -8,7 +8,7 @@
 namespace EzSystems\RepositoryForms\Tests\FieldType\Mapper;
 
 use eZ\Publish\Core\Repository\Values\ContentType\FieldDefinition;
-use EzSystems\RepositoryForms\FieldType\Mapper\FormTypeBasedFieldValueFormMapper;
+use EzSystems\EzPlatformAdminUi\Form\FieldTypeMapper\FormTypeBasedFieldValueFormMapper;
 
 class FormTypeBasedFieldValueFormMapperTest extends BaseMapperTest
 {

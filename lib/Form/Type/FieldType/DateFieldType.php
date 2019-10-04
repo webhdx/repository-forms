@@ -5,7 +5,7 @@
  */
 namespace EzSystems\RepositoryForms\Form\Type\FieldType;
 
-use EzSystems\RepositoryForms\FieldType\DataTransformer\DateValueTransformer;
+use EzSystems\EzPlatformAdminUi\Form\DataTransformer\FieldType\DateValueTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\FormBuilderInterface;
