@@ -10,8 +10,8 @@ namespace EzSystems\RepositoryForms\Tests\Validator\Constraints;
 
 use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeData;
 use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
-use EzSystems\RepositoryForms\Validator\Constraints\UniqueFieldDefinitionIdentifier;
-use EzSystems\RepositoryForms\Validator\Constraints\UniqueFieldDefinitionIdentifierValidator;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueFieldDefinitionIdentifier;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueFieldDefinitionIdentifierValidator;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Validator\Context\ExecutionContextInterface;
 use Symfony\Component\Validator\Violation\ConstraintViolationBuilderInterface;

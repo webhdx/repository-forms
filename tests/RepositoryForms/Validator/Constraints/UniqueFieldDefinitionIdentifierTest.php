@@ -8,7 +8,7 @@
  */
 namespace EzSystems\RepositoryForms\Tests\Validator\Constraints;
 
-use EzSystems\RepositoryForms\Validator\Constraints\UniqueFieldDefinitionIdentifier;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueFieldDefinitionIdentifier;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Validator\Constraint;
 

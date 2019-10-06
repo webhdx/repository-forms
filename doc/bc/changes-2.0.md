@@ -35,7 +35,7 @@ Changes affecting version compatibility with former or future versions.
   How it might affect your code: If you are extending those classes you are no longer required to provide above dependencies.
 
 
-- `EzSystems\RepositoryForms\Form\Type\FieldValue\Author\{AuthorCollectionType,AuthorEntryType}` were moved to `EzSystems\RepositoryForms\Form\Type\FieldType\Author\` namespace.
+- `EzSystems\RepositoryForms\Form\Type\FieldValue\Author\{AuthorCollectionType,AuthorEntryType}` were moved to `EzSystems\EzPlatformAdminUi\Form\Type\FieldType\Author\` namespace.
 
   How it might affect your code: You are required to change all occurrences of these classes in import sections.
 

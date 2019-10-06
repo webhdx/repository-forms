@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace EzSystems\RepositoryForms\Tests\Validator\Constraints;
 
-use EzSystems\RepositoryForms\Validator\Constraints\UserAccountPassword;
-use EzSystems\RepositoryForms\Validator\Constraints\UserAccountPasswordValidator;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\UserAccountPassword;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\UserAccountPasswordValidator;
 use PHPUnit\Framework\TestCase;
 
 class UserAccountPasswordTest extends TestCase
 {
-    /** @var \EzSystems\RepositoryForms\Validator\Constraints\Password */
+    /** @var \EzSystems\EzPlatformAdminUi\Validator\Constraints\Password */
     private $constraint;
 
     protected function setUp(): void

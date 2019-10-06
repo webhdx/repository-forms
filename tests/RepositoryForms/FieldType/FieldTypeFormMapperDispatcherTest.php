@@ -10,13 +10,13 @@ namespace EzSystems\RepositoryForms\Tests\FieldType;
 
 use eZ\Publish\API\Repository\Values\Content\Field;
 use eZ\Publish\Core\Repository\Values\ContentType\FieldDefinition;
+use EzSystems\EzPlatformAdminUi\FieldType\FieldDefinitionFormMapperInterface;
+use EzSystems\EzPlatformAdminUi\FieldType\FieldTypeFormMapperDispatcher;
+use EzSystems\EzPlatformAdminUi\FieldType\FieldTypeFormMapperDispatcherInterface;
+use EzSystems\EzPlatformAdminUi\FieldType\FieldValueFormMapperInterface;
 use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData;
 use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeData;
 use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData;
-use EzSystems\RepositoryForms\FieldType\FieldDefinitionFormMapperInterface;
-use EzSystems\RepositoryForms\FieldType\FieldTypeFormMapperDispatcher;
-use EzSystems\RepositoryForms\FieldType\FieldTypeFormMapperDispatcherInterface;
-use EzSystems\RepositoryForms\FieldType\FieldValueFormMapperInterface;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Form\FormInterface;
 
@@ -28,12 +28,12 @@ class FieldTypeFormMapperDispatcherTest extends TestCase
     private $dispatcher;
 
     /**
-     * @var \EzSystems\RepositoryForms\FieldType\FieldDefinitionFormMapperInterface|\PHPUnit\Framework\MockObject\MockObject
+     * @var \EzSystems\EzPlatformAdminUi\FieldType\FieldDefinitionFormMapperInterface|\PHPUnit\Framework\MockObject\MockObject
      */
     private $fieldDefinitionMapperMock;
 
     /**
-     * @var \EzSystems\RepositoryForms\FieldType\FieldValueFormMapperInterface|\PHPUnit\Framework\MockObject\MockObject
+     * @var \EzSystems\EzPlatformAdminUi\FieldType\FieldValueFormMapperInterface|\PHPUnit\Framework\MockObject\MockObject
      */
     private $fieldValueMapperMock;
 

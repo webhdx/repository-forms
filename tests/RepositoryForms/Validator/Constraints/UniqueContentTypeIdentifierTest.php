@@ -8,7 +8,7 @@
  */
 namespace EzSystems\RepositoryForms\Tests\Validator\Constraints;
 
-use EzSystems\RepositoryForms\Validator\Constraints\UniqueContentTypeIdentifier;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueContentTypeIdentifier;
 use PHPUnit\Framework\TestCase;
 
 class UniqueContentTypeIdentifierTest extends TestCase

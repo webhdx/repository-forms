@@ -12,8 +12,8 @@ use eZ\Publish\API\Repository\Exceptions\NotFoundException;
 use eZ\Publish\API\Repository\URLService;
 use eZ\Publish\API\Repository\Values\URL\URL;
 use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\URL\URLUpdateData;
-use EzSystems\RepositoryForms\Validator\Constraints\UniqueURL;
-use EzSystems\RepositoryForms\Validator\Constraints\UniqueURLValidator;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueURL;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueURLValidator;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 use Symfony\Component\Validator\Context\ExecutionContextInterface;
@@ -27,7 +27,7 @@ class UniqueURLValidatorTest extends TestCase
     /** @var \Symfony\Component\Validator\Context\ExecutionContextInterface|\PHPUnit\Framework\MockObject\MockObject */
     private $executionContext;
 
-    /** @var \EzSystems\RepositoryForms\Validator\Constraints\UniqueURLValidator */
+    /** @var \EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueURLValidator */
     private $validator;
 
     protected function setUp(): void

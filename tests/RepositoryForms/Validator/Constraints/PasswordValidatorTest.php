@@ -8,8 +8,8 @@ use eZ\Publish\API\Repository\UserService;
 use eZ\Publish\API\Repository\Values\ContentType\ContentType;
 use eZ\Publish\API\Repository\Values\User\PasswordValidationContext;
 use eZ\Publish\Core\FieldType\ValidationError;
-use EzSystems\RepositoryForms\Validator\Constraints\Password;
-use EzSystems\RepositoryForms\Validator\Constraints\PasswordValidator;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\Password;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\PasswordValidator;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Validator\Context\ExecutionContextInterface;
 use Symfony\Component\Validator\Violation\ConstraintViolationBuilderInterface;
@@ -22,7 +22,7 @@ class PasswordValidatorTest extends TestCase
     /** @var \Symfony\Component\Validator\Context\ExecutionContextInterface|\PHPUnit\Framework\MockObject\MockObject */
     private $executionContext;
 
-    /** @var \EzSystems\RepositoryForms\Validator\Constraints\PasswordValidator */
+    /** @var \EzSystems\EzPlatformAdminUi\Validator\Constraints\PasswordValidator */
     private $validator;
 
     protected function setUp(): void

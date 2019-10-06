@@ -1,6 +1,6 @@
 EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeData:
     constraints:
-        - EzSystems\RepositoryForms\Validator\Constraints\UniqueContentTypeIdentifier: ~
+        - EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueContentTypeIdentifier: ~
     properties:
         identifier:
             - NotBlank: ~
@@ -36,10 +36,10 @@ EzSystems\EzPlatformAdminUi\RepositoryForms\Data\ContentTypeData:
 
 EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData:
     constraints:
-        - EzSystems\RepositoryForms\Validator\Constraints\UniqueFieldDefinitionIdentifier: ~
-        - EzSystems\RepositoryForms\Validator\Constraints\ValidatorConfiguration: ~
-        - EzSystems\RepositoryForms\Validator\Constraints\FieldSettings: ~
-        - EzSystems\RepositoryForms\Validator\Constraints\FieldDefinitionDefaultValue: ~
+        - EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueFieldDefinitionIdentifier: ~
+        - EzSystems\EzPlatformAdminUi\Validator\Constraints\ValidatorConfiguration: ~
+        - EzSystems\EzPlatformAdminUi\Validator\Constraints\FieldSettings: ~
+        - EzSystems\EzPlatformAdminUi\Validator\Constraints\FieldDefinitionDefaultValue: ~
     properties:
         identifier:
             - NotBlank: ~
@@ -62,7 +62,7 @@ EzSystems\EzPlatformAdminUi\RepositoryForms\Data\FieldDefinitionData:
 
 EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\RoleData:
     constraints:
-        - EzSystems\RepositoryForms\Validator\Constraints\UniqueRoleIdentifier: ~
+        - EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueRoleIdentifier: ~
     properties:
         identifier:
             - NotBlank: ~
@@ -71,7 +71,7 @@ EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Role\RoleData:
 
 eZ\Publish\API\Repository\Values\Content\SectionStruct:
     constraints:
-        - EzSystems\RepositoryForms\Validator\Constraints\UniqueSectionIdentifier: ~
+        - EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueSectionIdentifier: ~
     properties:
         identifier:
             - NotBlank: ~
@@ -120,11 +120,11 @@ EzSystems\EzPlatformAdminUi\RepositoryForms\Data\User\UserAccountFieldData:
 
 EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Content\FieldData:
     constraints:
-        - EzSystems\RepositoryForms\Validator\Constraints\FieldValue: ~
+        - EzSystems\EzPlatformAdminUi\Validator\Constraints\FieldValue: ~
 
 EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageCreateData:
     constraints:
-        - EzSystems\RepositoryForms\Validator\Constraints\UniqueLanguageCode: ~
+        - EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueLanguageCode: ~
     properties:
         languageCode:
             - NotBlank: ~
@@ -137,7 +137,7 @@ EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageCreateData:
 
 EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageUpdateData:
     constraints:
-        - EzSystems\RepositoryForms\Validator\Constraints\UniqueLanguageCode: ~
+        - EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueLanguageCode: ~
     properties:
         languageCode:
             - NotBlank: ~
@@ -158,7 +158,7 @@ EzSystems\EzPlatformAdminUi\RepositoryForms\Data\URLListData:
 
 eZ\Publish\API\Repository\Values\URL\URLUpdateStruct:
     constraints:
-        - EzSystems\RepositoryForms\Validator\Constraints\UniqueURL: ~
+        - EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueURL: ~
     properties:
         url:
             - NotBlank: ~

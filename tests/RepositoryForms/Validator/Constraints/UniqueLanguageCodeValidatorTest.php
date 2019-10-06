@@ -13,8 +13,8 @@ use eZ\Publish\API\Repository\Values\Content\Language;
 use eZ\Publish\Core\Base\Exceptions\InvalidArgumentException;
 use eZ\Publish\Core\Base\Exceptions\NotFoundException;
 use EzSystems\EzPlatformAdminUi\RepositoryForms\Data\Language\LanguageCreateData;
-use EzSystems\RepositoryForms\Validator\Constraints\UniqueLanguageCode;
-use EzSystems\RepositoryForms\Validator\Constraints\UniqueLanguageCodeValidator;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueLanguageCode;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueLanguageCodeValidator;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 use Symfony\Component\Validator\Context\ExecutionContextInterface;
@@ -33,7 +33,7 @@ class UniqueLanguageCodeValidatorTest extends TestCase
     private $executionContext;
 
     /**
-     * @var \EzSystems\RepositoryForms\Validator\Constraints\UniqueLanguageCodeValidator
+     * @var \EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueLanguageCodeValidator
      */
     private $validator;
 

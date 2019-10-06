@@ -8,12 +8,12 @@
  */
 namespace EzSystems\RepositoryForms\Tests\Validator\Constraints;
 
-use EzSystems\RepositoryForms\Validator\Constraints\UniqueURL;
+use EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueURL;
 use PHPUnit\Framework\TestCase;
 
 class UniqueURLTest extends TestCase
 {
-    /** @var \EzSystems\RepositoryForms\Validator\Constraints\UniqueURL */
+    /** @var \EzSystems\EzPlatformAdminUi\Validator\Constraints\UniqueURL */
     private $constraint;
 
     protected function setUp(): void
