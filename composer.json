@@ -24,6 +24,7 @@
     },
     "autoload": {
         "psr-4": {
+            "EzSystems\\RepositoryForms\\": "lib",
             "EzSystems\\RepositoryFormsBundle\\": "bundle"
         },
         "files": ["lib/deprecated.php"]
