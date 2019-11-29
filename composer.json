@@ -26,12 +26,6 @@
         "psr-4": {
             "EzSystems\\RepositoryForms\\": "lib",
             "EzSystems\\RepositoryFormsBundle\\": "bundle"
-        },
-        "files": ["lib/deprecated.php"]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "EzSystems\\RepositoryFormsBundle\\Tests\\": "tests/RepositoryFormsBundle"
         }
     },
     "extra": {
